@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Validar si la contraseña y la repetición de la contraseña son iguales</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script>
+function comprobarClave(){
+    clave1 = document.f1.clave1.value
+    clave2 = document.f1.clave2.value
+     
+
+    if (clave1 == "ronaldo" && clave2 == "bertillo"){
+       alert("Los Datos Coinciden...\n Bienvenido");
+        var href =  "dos.html";
+        window.location=href;
+         }
+       
+    else{
+       alert("Las dos claves son distintas...\nIntentelo nuevamente.");
+        var href =  "index.html";
+        window.location=href;
+    };
+       
+}  
+</script>
+</head>
+
+<body bg color="gray">
+
+<h1><center>validar contasenas (verifique que sean las correctas)</center></h1>
+<br>
+<h2><center>Escribe las contrasenas que el propietario le consedio.</center></h2>
+
+<br>
+<form action="" name="f1">
+Contrasena: <input type="password" name="clave1" size="20">
+<br>
+Segunda contrasena: <input type="password" name="clave2" size="20">
+<br>
+<input type="button" value="COMPROVAR QUE SEAN CORRECTAS" onClick="comprobarClave()">
+
+</form>
+
+</body>
+</html>
